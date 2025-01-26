@@ -54,7 +54,7 @@ function App() {
   return(
     <>
     <ItemForm error={error} formData={formData} handleChange={handleChange} submitData={submitData}/>
-    <InventoryTable items={items} error={error}/>
+    <InventoryTable items={items} error={error} setItems={setItems}/>
     </>
   )
 }

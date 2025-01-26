@@ -19,3 +19,8 @@ padding: 20px;
     display: flex;
     gap: 6px;
 }
+
+.filter-input{
+    place-self: end;
+    margin-right: 20px;
+}
