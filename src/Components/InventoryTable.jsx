@@ -9,7 +9,7 @@ import Delete from '@mui/icons-material/Delete';
 import EditModal from './EditModal';
 import FilterInput from './FilterInput';
 
-const InventoryTable = ({ items, error, setItems }) => {
+const InventoryTable = ({ items, error, setItems, setError }) => {
   
   const [open, setOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
@@ -144,6 +144,7 @@ const InventoryTable = ({ items, error, setItems }) => {
         items={items}
         setItems={setItems}
         handleCloseModal={handleCloseModal}
+        setError={setError}
       />
     </>
   );
